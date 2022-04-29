@@ -2,7 +2,8 @@
 import axios from 'axios';
 
 //Posts API End Point
-const url = 'https://memories-project-nm.herokuapp.com/posts';
+//const herokuurl = 'https://memories-project-nm.herokuapp.com/posts';
+const url = 'http://localhost:5000/posts';
 
 export const fetchPosts = () => axios.get(url);
 export const createPost = (newPost) => axios.post(url, newPost);
